@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLES FILES -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <title>WeatherApp</title>
+</head>
+
+
+<body>
+    <!-- HEADER SECTION START -->
+    <header class="py-2">
+        <nav class="navbar navbar-expand-lg navbar-dark text-white" id="navbar">
+            <div class="container py-4 d-flex justify-content-space-between align-items-start">
+                <a href="#" class="navbar-brand d-flex p-0">
+                    <img src="Images/logo.png">
+                    <div class="mx-2">
+                        <h6 class="text-white m-0">Weather</h6>
+                        <p class="text-muted">tagline goes here</p>
+                    </div>
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav" aria-controls="myNav" aria-expand="false" aria-label="toggle navigation">
+                    <div class="d-flex flex-column">
+                        <span class="nav-icon"></span>
+                        <span class="nav-icon"></span>
+                        <span class="nav-icon"></span>
+                    </div>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="myNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-lg-2">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item mx-lg-2">
+                            <a href="#" class="nav-link">News</a>
+                        </li>
+                        <li class="nav-item mx-lg-2">
+                            <a href="#" class="nav-link">Live Cameras</a>
+                        </li>
+                        <li class="nav-item mx-lg-2">
+                            <a href="#" class="nav-link">Photos</a>
+                        </li>
+                        <li class="nav-item mx-lg-2">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+            </div>
+        </nav>                
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MAIN SECTION START -->
+    <section class="main">
+        <div class="container p-0">
+            <div class="row m-0">
+                <div class="col-12 p-0 position-relative city-search">
+                    <input id="usercity" type="text" class="form-control form-control-lg rounded-pill" name="city" placeholder="Find Your Location ...">
+                    <button type="button" class="btn search-btn rounded-pill">Find</button>
+                </div>
+
+                <div class="row cards-wrapper m-0 p-0">
+                    <div class="col-lg-4 current-day p-0">
+                        <div class="header d-flex justify-content-space-between align-items-center">
+                            <p id="currentDay" class="me-auto my-0"></p>
+                            <p id="date" class="ms-auto my-0"></p>
+                        </div>
+                        <div class="content">
+                            <h6 id="city" class="city"></h6>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <h2 id="currentTemp" class="temp text-white"></h2>
+                                <img  id="current-icon">
+                            </div>
+                            <p id="currentState" class="Weather-state my-3"></p>
+                            <div class="Weather-details d-flex align-items-center">
+                                <div class="me-4">
+                                    <img src="Images/icon-umberella.png" class="me-1">
+                                    <span>20%</span>
+                                </div>
+                                <div class="me-4">
+                                    <img src="Images/icon-wind.png" class="me-1">
+                                    <span>18km/h</span>
+                                </div>
+                                <div class="me-4">
+                                    <img src="Images/icon-compass.png" class="me-1">
+                                    <span>East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 day-two text-center p-0">
+                        <div class="header">
+                            <p id="nextDay" class="me-auto my-0"></p>
+                        </div>
+                        <div class="content p-5">
+                            <img  id="nextIcon">
+                            <h5 class="temp-1 text-white nextMaxTemp"></h5>
+                            <p class="temp-2 nextMinTemp"></p>
+                            <p class="Weather-state my-3 nextState"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 day-three text-center p-0">
+                        <div class="header">
+                            <p id="thirdDay" class="me-auto my-0"></p>
+                        </div>
+                        <div class="content p-5">
+                            <img id="thirdIcon">
+                            <h5 class="temp-1 thirdMaxTemp text-white"></h5>
+                            <p class="temp-2 thirdMinTemp"></p>
+                            <p class="Weather-state my-3 thirdState"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAIN SECTION END -->
+
+
+
+
+    <!-- FOOTER SECTION START -->
+    <footer class="mt-5">
+        <div class="container p-0">
+            <div class="row m-0 pt-5">
+                <div class="col-lg-8 me-auto p-0 my-2 position-relative">
+                    <input type="email" class="form-control form-control-lg rounded-pill" name="mail" placeholder="Enter your email to subscribe ...">
+                    <button type="button" class="btn search-btn rounded-pill">Subscribe</button>
+                </div>
+                <div class="col-lg-3 ms-auto my-2 p-0 d-flex align-items-center">
+                    <div class="d-flex socilas ms-lg-auto">
+                        <a href="#" class="mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="mx-1">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="mx-1">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="text-white mb-5 mt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

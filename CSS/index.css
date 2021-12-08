@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar .navbar-nav .nav-link,
+.form-control,
+.form-control:focus,
+.search-btn,
+.search-btn:hover,
+footer .socilas a:hover,
+.breadcrumb-item[aria-current="page"]{
+    color: #fff;
+}
+
+body{
+    background-color: rgb(30, 32, 43);
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+.nav-icon {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px;
+}
+.navbar .navbar-toggler {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 15px;
+}
+.navbar .navbar-toggler:hover{
+    border: 2px solid #009ad8;
+}
+.navbar .navbar-toggler:hover .nav-icon{
+    background-color: #009ad8;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-brand h6{
+    font-size: 16px;
+}
+.navbar-brand p{
+    font-size: 12px;
+}
+.navbar-brand img{
+    height: 35px;
+}
+.navbar .navbar-nav .nav-link {
+    padding: 2px 20px;
+    border-radius: 50rem;
+    border: 2px solid transparent;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: #009ad8;
+    border-radius: 50rem;
+    border: 2px solid #009ad8;
+}
+
+
+/* =============================== */
+@media screen and (max-width: 973.99px){
+    .navbar .navbar-nav{
+        text-align: center;
+        background-color: rgb(38, 41, 54);
+        margin-top: 25px;
+        border-radius: 10px;
+    }
+    .navbar .navbar-nav .nav-item{
+        padding: 15px 0;
+    }
+    .navbar .navbar-nav .nav-item:not(:last-child){
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+    .navbar .navbar-nav .nav-link,
+    .navbar .navbar-nav .nav-link:hover,
+    .navbar .navbar-nav .nav-link.active {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+    }
+    .navbar .navbar-nav .nav-link,
+    .navbar .navbar-nav .nav-link:hover{
+        color: #fff;
+    }
+    .navbar .navbar-nav .nav-link.active{
+        color: #009ad8;
+    }
+}
+
+/* MAIN SECTION START */
+.main{
+    background-image: url("../Images/banner.png");
+    background-repeat: no-repeat;
+}
+.city-search{
+    margin: 70px 0;
+}
+.form-control{
+    background-color: rgb(30, 32, 43);
+    border: 0;
+    outline: none;
+    padding: 10px 15px; 
+}
+.form-control:focus{
+    box-shadow: none;
+    background-color: rgb(30, 32, 43);
+}
+.form-control::placeholder{
+    font-size: 14px;
+}
+.search-btn{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    padding: 5px 35px;
+}
+footer .socilas a:hover,
+.search-btn,
+.contact-form form .sub-btn{
+    background-color: #009ad8;
+}
+/* MAIN SECTION END */
+
+/* WEATHER CARDS START */
+.cards-wrapper{
+    background-color: rgb(50, 53, 68);
+    border-radius: 8px;
+}
+.current-day,
+.day-two,
+.day-three{
+    font-size: 14px;
+    color: #bfc1c8;
+}
+.day-two{
+    background-color: rgba(0,0,0,.2);
+}
+.header{
+    background-color: rgba(0,0,0,.1);
+    padding: 15px 10px;
+}
+.content{
+    padding: 30px 20px;
+}
+.city{
+    font-size: 18px;
+}
+.temp{
+    font-size: 90px;
+}
+.Weather-state,
+footer .socilas a{
+    color: #009ad8;
+}
+#current-icon{
+    width: 80px;
+    height: 80px;
+}
+/* WEATHER CARDS END */
+
+
+/* FOOTER SECTION START */
+footer{
+    background-color: rgb(50, 53, 68);
+}
+
+footer .socilas a{
+    text-decoration: none;
+    background-color: rgb(30, 32, 43);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+/* FOOTER SECTION END */
+
+/* CONATCT PAGE START */
+.breadcrumb-item a{
+    text-decoration: none;
+    color: #bfc1c8;
+}
+.breadcrumb-item{
+    font-size: 13px;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content: url("../Images/arrow-gray.png");
+}
+.page-breadcrumb,
+.contact-detailes{
+    background-color: #262936;
+}
+.breadcrumb{
+    padding: 15px;
+}
+.contact-detailes{
+    border-radius: 8px;
+}
+.contact-paragraph{
+    line-height: 1.6;
+    font-size: 14px;
+    color: #bfc1c8;
+}
+.contact-form form input,
+.contact-form form textarea{
+    border: 2px solid #393c48;
+    background-color: inherit;
+    padding: 12px 15px;
+    width: 100%;
+    color: #fff;
+    font-size: 15px
+}
+textarea{
+    border-radius: 30px;
+}
+.contact-form form input:focus,
+.contact-form form input:hover,
+.contact-form form textarea:focus,
+.contact-form form textarea:hover{
+    border: 2px solid #009ad8;
+    outline: none;
+}
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder{
+    font-size: 14px;
+}
+.sub-btn{
+    font-size: 15px;
+    padding: 8px 20px;
+}
+.contact-detailes{
+    font-size: 14px;
+    color: #bfc1c8;
+}
+.contact a{
+    text-decoration: none;
+    color: #bfc1c8;
+}
+/* CONATCT PAGE END */
