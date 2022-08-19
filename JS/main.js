@@ -24,7 +24,7 @@ async function getWeather(city = "Cairo") {
     
     let selectedCity = city;
     let myKey = "c22e51960dac495ca4565757211809";
-    let url = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${myKey}&q=${selectedCity}&days=3`);
+    let url = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${myKey}&q=${selectedCity}&days=3`);
     let weatherData = await url.json();
 
     console.log(weatherData)
